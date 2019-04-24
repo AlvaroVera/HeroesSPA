@@ -30,7 +30,7 @@ export class HeroesService {
             bio: 'Su principal poder es su capacidad de aumentar su fuerza hasta niveles prácticamente ilimitados a la vez que aumenta su furia. Dependiendo de qué personalidad de Hulk esté al mando en ese momento (el Hulk Banner es el más débil, pero lo compensa con su inteligencia).',
             img: 'assets/img/hulk.png',
             aparicion: '1962-05-01',
-            casa:'Marvel'
+            casa: 'Marvel'
         },
         {
             nombre: 'Linterna Verde',
