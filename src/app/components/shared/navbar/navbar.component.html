@@ -18,9 +18,9 @@
                 <a class="nav-link" [routerLink]="['about']">About</a>
             </li>
         </ul>
-        <form class="form-inline my-2 my-lg-0">
-            <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Buscar héroe" (keyup.enter)="buscarHeroe(buscarTexto.value)" #buscarTexto>
-            <button class="btn btn-outline-success my-2 my-sm-0" type="button">Search</button>
-        </form>
+        <div class="form-inline my-2 my-lg-0">
+            <input class="form-control mr-sm-2" placeholder="Buscar héroe" (keyup.enter)="buscarHeroe(buscarTexto.value)" #buscarTexto>
+            <button class="btn btn-outline-success my-2 my-sm-0" (click)="buscarHeroe(buscarTexto.value)" type="button">Search</button>
+        </div>
     </div>
 </nav>
