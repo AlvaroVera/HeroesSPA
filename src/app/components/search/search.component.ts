@@ -13,8 +13,11 @@ import { ActivatedRoute } from '@angular/router';
 export class SearchComponent implements OnInit {
 
   heroes: Heroe[] = [];
+  termino: string;
+
   constructor(private _heroService: HeroesService, private _activatedRoute: ActivatedRoute) {
     this._activatedRoute.params.subscribe(params => {
+      this.termino = params['termino'];
       this.heroes = this._heroService.buscarHeroes(params['termino']);
     });
   }

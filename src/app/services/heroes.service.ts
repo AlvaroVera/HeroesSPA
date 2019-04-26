@@ -62,8 +62,8 @@ export class HeroesService {
         return this.heroes;
     }
 
-    getHeroe(idx: string) {
-        return this.heroes[idx];
+    getHeroe(nombre: string) {
+        return this.heroes.find(heroe => heroe.nombre == nombre);
     }
 
     buscarHeroes(termino: string): Heroe[] {
